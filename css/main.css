@@ -1,0 +1,836 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc((20 / 14) * 100%);
+    color: #737373;
+    min-height: 100vh;
+}
+
+.wrapper{
+    min-width: 1200px;
+}
+/* ----------NAV------------------------- */
+
+._container{
+    max-width: 1046px;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.header__body{
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+}
+
+.header__body .nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__body .nav ul > *:not(:last-child){
+    margin-right: 21px;
+}
+
+.header__body .nav ul li{
+    list-style: none;
+    
+    
+}
+
+.header__body .nav ul li a{
+    font-weight: 600;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+
+
+
+.logo{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin: 0 132px 0 0;
+}
+
+/* --------Firts Screen----- */
+
+.firstScreen {
+    height: 793px;
+    background-image: url("../img/firstscr/background.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+    background-size: cover;
+    overflow: hidden;
+}
+.firstScreen__body {
+    position: relative;
+}
+
+.firstScreen__bodyContainer {
+    margin-top: 184px;
+    max-width: 395px;
+}
+
+.firstScreen__bodyContainer > *:not(:last-child){
+    margin-bottom: 35px;
+}
+.firstScreen__bodyContainerTitle {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 138%;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+.firstScreen__bodyContainerText {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.firstScreen__bodyContainerBtns {
+    letter-spacing: 0.2px;
+}
+
+.firstScreen__bodyContainerBtnOrange {
+    background: #FF7B47;
+    border-radius: 37px;
+    padding: 10px 36px; 
+    color: #ffffff;
+}
+
+.firstScreen__bodyContainerBtn {
+    border-radius: 37px;
+    padding: 10px 36px; 
+    border: 1px solid #0D5C63;
+    margin-left: 10px;
+}
+
+/* ------secondScreen------- */
+
+.secondScreen {
+}
+
+.secondScreen_body {
+}
+
+.secondScreen_bodyContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 35px 40px;
+    width: 328px;
+    height: 242px;
+    background: #FFFFFF;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    /* position: relative; */
+    margin: -120px 0 0 0;
+}
+
+.cardTitle {
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin: 10px 0;
+}
+
+.cardText {
+    font-weight: 500;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 35px 40px;
+    width: 328px;
+    height: 242px;
+    background: #FFFFFF;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    margin: -120px 30px 0 30px;
+}
+
+.card3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 35px 40px;
+    width: 328px;
+    height: 242px;
+    background: #0D5C63;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    margin: -120px 0 0 0;
+}
+
+.cardTitle3{
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.cardText3{
+    font-weight: 500;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+}
+
+
+/* ----thirdScreen---------- */
+
+
+.thirdScreen {
+}
+
+.thirdScreen_body {
+}
+
+.thirdScreen_bodyContainer {
+    margin-top: 80px;
+    padding-bottom: 80px;
+}
+
+.thirdScreen__bodyContainerTitle {
+    font-size: 40px;
+    line-height: 142%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin-bottom: 10px;
+}
+
+.thirdScreen__bodyContainerText {
+    font-weight: 500;
+    line-height: 143%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin-bottom: 50px;
+    padding: 0 265px;
+}
+
+.thirdScreen__bodyContainerCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.thirdScreen__bodyContainerCard > *:not(:last-child){
+    margin-right: 30px;
+}
+
+.thirdCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 35px;
+    width: 239px;
+    height: 209px;
+    background-color: #FFFFFF;
+
+}
+
+.thirdCardTitle1 {
+    font-size: 40px;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin: 10px auto;
+}
+
+.thirdCardTitle2 {
+    font-size: 40px;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin: 30px auto 10px auto;
+}
+
+.thirdCardTitle3 {
+    font-size: 40px;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin: 10px auto;
+}
+
+.thirdCardTitle4 {
+    font-size: 40px;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin: 17px auto 10px auto;
+}
+
+.thirdCardText {
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #737373;
+}
+
+/* ---------practiceScreen------- */
+
+.practiceScreen {
+}
+.practiceScreen_body {
+}
+
+.practiceScreen_bodyContainer {
+    margin: 80px auto;
+}
+
+.practiceScreenTitle{
+    font-size: 40px;
+    line-height: 142%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+
+.practiceScreenText{
+    font-weight: 500;
+    line-height: 143%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin-bottom: 45px;
+    padding: 0 265px;
+}
+
+.practiceContainerCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.practiceCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 239px;
+    height: 341px;
+    background-color: #FFFFFF;
+}
+
+.practiceContainerCard > *:not(:last-child){
+    margin-right: 30px;
+}
+
+.practiceCardTitle {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin: 30px 30px 15px 30px;
+}
+
+.practiceCardText1{
+    font-weight: 500;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin: 0 30px 30px 30px;
+}
+
+.practiceCardText2{
+    font-weight: 500;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin: 0 30px 50px 30px;
+}
+
+/* -------whoweareScreen------ */
+
+.whoweareScreen {
+    background-color: #ffffff;
+}
+
+.whoweareScreen_body {
+}
+
+.whoweareScreen_bodyContainer {
+    margin-bottom: 100px;
+    padding-top: 100px;
+}
+.whoweareScreen_bodyContainerTitle {
+    font-size: 40px;
+    line-height: 142%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin-bottom: 10px;
+}
+.whoweareScreen_bodyContainerText {
+    font-weight: 500;
+    line-height: 143%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+    padding: 0 265px;
+}
+.whoweareScreen_bodyContainerCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 442px;
+    /* overflow: hidden; */
+    margin-bottom: 100px;
+}
+
+.whoweareScreenMediaCard {
+    position: relative;
+}
+
+.btnWhoweare img{
+    position: absolute;
+    left: calc(50% - 97.6px/2 + 0.3px);
+top: calc(50% - 98.4px/2 + 0.2px);
+}
+
+.whoweareScreenMostCard {
+    margin-left: 120px;
+    height: 438px;
+}
+.whoweareScreenMostCard1 {
+}
+.mostTitle {
+    font-size: 40px;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.mostText {
+    font-weight: 500;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin-bottom: 20px;
+}
+
+.whoweareScreenMostCardItem {
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.whoweareScreenMostCardItem img{
+    float: left;
+}
+
+
+.mostItemTitle {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin-bottom: 5px;
+    margin-left: 46px;
+    display: block;
+}
+
+.mostItemText {
+    font-weight: 600;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    color: #737373;
+    display: block;
+    margin-left: 46px;
+}
+
+/* -------clientsScreen------- */
+
+.clientsScreen {
+    height: 339px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.clientsScreenBgc{
+    height: 77px;
+    background: #252B42;
+}
+
+.clientsScreen_body {
+}
+
+.clientsScreen_bodyContainer {
+   
+}
+.clientsScreen_bodyContainerBrend {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.clientsScreen_bodyContainerForm {
+    width: 986px;
+    height: 124px;
+    background: #17213C;
+    border-radius: 2px;
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: -62px;
+    position: relative;
+    padding: 30px 50px;
+}
+
+.clientsScreen_bodyContainerForm h3{
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+.clientsForm form{
+    height: 58px;
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    margin-left: 170px;
+    display: flex;
+    flex-direction: rav;
+    justify-content: space-between;
+}
+
+
+.clientsForm input[type="text"]{
+    padding-left: 20px;
+    width: 333px;
+    font-weight: 400;
+    line-height: 200%;
+    letter-spacing: 0.2px;
+    color: #737373; 
+}
+
+.clientsForm input[type="submit"]{
+    width: 117px;
+    height: 100%;
+    background: #FF7B47;
+    border: 1px solid #E6E6E6;
+    border-radius: 0px 5px 5px 0px;
+    font-weight: 400;
+    line-height: 200%;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+/* ---------getScreen--------- */
+
+
+.getScreen {
+    background-color: #f3f3f3;
+    height: 808px;
+}
+
+.getScreen_body {
+}
+.getScreen_bodyContainer {
+}
+
+.getScreen_bodyContainerTitle {
+    font-size: 40px;
+    line-height: 142%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    padding-bottom: 10px;
+    padding-top: 80px;
+}
+
+.getScreen_bodyContainerText {
+    font-weight: 500;
+    line-height: 143%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+    padding: 0 265px;
+    padding-bottom: 80px;
+}
+
+.getScreen_bodyContainerCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.getScreen_bodyContainerCard1 {
+    width: 328px;
+    height: 333px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 40px;
+}
+
+.getScreen_bodyContainerCard1 img{
+    margin-bottom: 15px;
+}
+
+
+.getScreen_bodyContainerCard1 h6{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #252B42;  
+}
+
+.getScreen_bodyContainerCard1 h5{
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin: 15px auto;
+}
+
+.getScreen_bodyContainerCard1 button{
+    width: 160px;
+    height: 44px;
+    border: 1px solid #FF7B47;
+    border-radius: 5px;
+    font-weight: 600;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    color: #FF7B47;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.getScreen_bodyContainerCard2 {
+    width: 328px;
+    height: 393px;
+    background-color: #252B42;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 40px;
+}
+
+.getScreen_bodyContainerCard2 img{
+    margin-bottom: 15px;
+}
+
+.getScreen_bodyContainerCard2 h6{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #ffffff;  
+}
+
+.getScreen_bodyContainerCard2 h5{
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+    margin: 15px auto;
+}
+
+.getScreen_bodyContainerCard2 button{
+    width: 160px;
+    height: 44px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-weight: 600;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    background-color: #252B42;
+    cursor: pointer;
+}
+
+
+/* --------footerScreen------- */
+
+
+.footerScreen {
+}
+.footerScreen_body {
+}
+.footerScreen_bodyContainer {
+}
+
+.footerScreen_bodyContainer1 {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerScreen_bodyContainer1 h3{
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    padding-bottom: 10px;
+}
+
+.footerScreen_bodyContainer1 p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.footerScreen_bodyContainer1 button{
+    width: 160px;
+    height: 58px;
+    background-color: #FF7B47;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin-right: 38px;
+    cursor: pointer;
+}
+
+.footerBgc{
+    background-color:  #17213C;;
+}
+
+.footerBgc_bodyContainerCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.footerBgcCard h5{
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footerBgcCard li{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    list-style: none;
+    cursor: pointer;
+}
+
+.footerBgcCard ul > *:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footerBgcCard1{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerBgcCard1 h5{
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footerContact{
+    display: flex;
+    flex-direction: row;
+    height: 38px;
+}
+
+.footerContact h6{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.footerContact img{
+    margin-right: 10px;
+}
+
+.footerEnd_bodyContainer{
+    margin: 25px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerEnd_bodyContainer p{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.footerEndImg img{
+    margin: 0 20px;
+}
+
+
